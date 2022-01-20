@@ -35,7 +35,7 @@ class CustomTextFormField extends StatelessWidget {
               : 'Please enter a valid password (min. 8 characters).'
           : RegExp(regEx).hasMatch(value!)
               ? null
-              : 'Please enter a valid value',
+              : 'Invalid value',
       decoration: InputDecoration(
         fillColor: Colors.grey[50],
         filled: true,
